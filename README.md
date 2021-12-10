@@ -12,7 +12,7 @@ while 1:
 ```
 <sup>☝ Yes, this is all the code, `88b` in total!</sup>
 
-## Explained
+# Explained
 It starts off with declaring a variable that keeps track of which **p**layer is playing.
 This is required to know wheter to place a `X` or `O`.
 It's used as a boolean, but actually uses an integer because it's shorter.
@@ -20,7 +20,7 @@ It's used as a boolean, but actually uses an integer because it's shorter.
 p=0
 ```
 
-Then we create an array storing the data fro the **g**rid.
+Then we create an array storing the data from the **g**rid.
 This is done by:
 
 1. Creating an array with a single element. It's the char `_`, this is done because it's the default before an `X` or `O`
@@ -42,11 +42,11 @@ while 1:
 - The `\n` makes sure output is in the desired square playing field.
 ### What the multiplying does
 The standard template contains 3 places where values can be inserted and is only for the first line of the grid, therefore it's multiplied by 3.
-#### Before:
+#### Result before:
 ```
     _ _ _
 ```
-#### After:
+#### Result after:
 ```
     _ _ _
     _ _ _
@@ -67,7 +67,7 @@ The standard template contains 3 places where values can be inserted and is only
 ```
 
 Goes back to the other player
-The `^=` allows you to flip between `1` and `0`.
+The ixor operator (`^=`) performs an xor assignment that flips between `1` and `0`.
 This is used to invert our improvised boolean.
  ```python
  p^=1
