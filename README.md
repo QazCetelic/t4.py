@@ -1,6 +1,5 @@
-A tiny version of Tic Tac Toe that I made for my Casio calculator.
-
-![](img.png)
+# Tiny Tic Tac Toe / t4.py
+A tiny version of Tic Tac Toe 🕹️ that I made for my Casio calculator 🧮.
 
 ```python
 p=0
@@ -12,7 +11,9 @@ while 1:
 ```
 <sup>☝ Yes, this is all the code, `88b` in total!</sup>
 
-# Explained
+![](img.png)
+
+# Explained 🧾
 It starts off with declaring a variable that keeps track of which **p**layer is playing.
 This is required to know wheter to place a `X` or `O`.
 It's used as an improvised boolean, but uses an integer because it's syntax is shorter.
@@ -36,11 +37,11 @@ Creates an infinite loop.
 while 1:
 ```
 
-## What the `\t\t%s %s %s\n` string template does
+## What does the string template `\t\t%s %s %s\n`?
 - The 2 `\t`' at the start add an indent which centers the grid in the middle of the calculator's screen.
 - The 3 `%s`' with spaces seperating them is where the characters from the grid array are placed.
 - The `\n` makes sure the output is in the desired square playing field.
-## What the multiplying does
+## What does the multiplying? 
 The standard template contains 3 places where values can be inserted and is only for the first line of the grid, therefore it's multiplied by 3.
 #### Result before:
 ```
@@ -52,7 +53,7 @@ The standard template contains 3 places where values can be inserted and is only
     _ _ _
     _ _ _
 ```
-## What `%(*g,)` does
+## What does `%(*g,)`?
 `g` is the variable that contains an array for the variables in the playing grid. The `,` turns the array into a tuple. The `*` (decompose) operator turns the tuple in seperate values which the string formatting operator (`%`) uses to insert into the template.
 ```python
  print(3*'\t\t%s %s %s\n'%(*g,))
